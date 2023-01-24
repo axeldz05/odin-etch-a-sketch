@@ -29,6 +29,8 @@ body{
 }
 .grid{
     display: flex;
+    width: 360px;
+    height: 360px;
     flex-wrap: wrap;
     background-color: white;
     border-style: solid;
