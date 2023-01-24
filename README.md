@@ -1,2 +1,2 @@
 # etch-a-sketch
-A basic etch-a-sketch for JavaScript practice.
+A basic etch-a-sketch for The Odin Project.
