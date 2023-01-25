@@ -56,3 +56,7 @@ button{
     background-color: #F2F3AE;
     justify-content: center;
 }
+#color_options{
+    display: flex;
+    gap: 15px;
+}
