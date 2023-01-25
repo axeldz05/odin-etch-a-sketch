@@ -3,16 +3,19 @@ const input = document.querySelector("#grid_size");
 const grid = document.querySelector('.grid');
 const color_picker = document.querySelector('#color_picker');
 const reset_button = document.querySelector('#reset');
+const grid_size = 720;
 
 let current_color = 'black';
 let cells_amount = 256;
 let cell_size = 0;
 let mouseDown = false;
 
+value.textContent = input.value + 'x' + input.value;
+grid.style.width = grid_size + 'px';
+grid.style.height = grid_size + 'px';
+
 calculateCellSize();
 createGrid();
-
-value.textContent = input.value + 'x' + input.value;
 
 input.addEventListener("input", (event) => {
     value.textContent = event.target.value + 'x' + event.target.value;
@@ -43,7 +46,7 @@ function createGrid() {
     }    
 }
 function calculateCellSize() {
-    cell_size = Math.sqrt(360*360/cells_amount)
+    cell_size = Math.sqrt(grid_size*grid_size/cells_amount)
 }
 function createCell(cell_size) {
     const cell = document.createElement('div');
