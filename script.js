@@ -3,7 +3,7 @@ const input = document.querySelector("#grid_size");
 const grid = document.querySelector('.grid');
 const color_picker = document.querySelector('#color_picker');
 const reset_button = document.querySelector('#reset');
-const grid_size = 720;
+const grid_size = 800;
 
 let current_color = 'black';
 let cells_amount = 256;
@@ -16,6 +16,7 @@ grid.style.height = grid_size + 'px';
 
 calculateCellSize();
 createGrid();
+current_color = color_picker.childNodes[1].value; 
 
 input.addEventListener("input", (event) => {
     value.textContent = event.target.value + 'x' + event.target.value;

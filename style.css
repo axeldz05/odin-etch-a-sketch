@@ -1,16 +1,24 @@
 body{
-    background-color: #363636;
+    background-color: #020122;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+p, h1{
+    color: #020122;
+}
+button{
+    background-color: #FF521B;
+    color: #020122;
 }
 .options{
-    background-color: #E5E5E5;
+    background-color: #F2F3AE;
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items:center;
+    justify-content:space-between;
     padding-right: 5%;
 }
 #color_picker{
@@ -31,7 +39,20 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: white;
+}
+.grid, .options, #header{
     border-style: solid;
     border-color: black;
     border-width: 2px;
+}
+#grid_size_setter{
+    display: flex;
+}
+#grid_size{
+    accent-color: #FF521B;
+}
+#header{
+    display: flex;
+    background-color: #F2F3AE;
+    justify-content: center;
 }
