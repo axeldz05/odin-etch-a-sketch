@@ -38,7 +38,7 @@ button{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .grid, .options, #header{
     border-style: solid;
